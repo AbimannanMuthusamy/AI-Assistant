@@ -53,7 +53,7 @@ public class OpenAIService implements LLMService {
 	@Override
 	public String getAPIKey(String modelName) throws Exception {
 		// TODO Auto-generated method stub
-		String apiKey = "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";
+		String apiKey = "";
 		return apiKey;
 	}
 
