@@ -1,4 +1,4 @@
-package com.merge;
+package main.java.com.merge;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -16,7 +16,6 @@ public class OpenAIService implements LLMService {
 			ObjectNode root = mapper.createObjectNode();
 			root.put("model", modelName);
 			root.put("temperature", 0);
-			System.out.println(mapper);
 			ArrayNode messages = root.putArray("messages");
 
 			ObjectNode sysMsg = messages.addObject();
