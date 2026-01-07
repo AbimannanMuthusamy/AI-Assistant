@@ -1,4 +1,4 @@
-package main.java.com.merge;
+package main.java.com.survivorship;
 
 public class MergeMain {
 
