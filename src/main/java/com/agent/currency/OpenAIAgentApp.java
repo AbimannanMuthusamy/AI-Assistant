@@ -15,7 +15,7 @@ public class OpenAIAgentApp {
         // Use "claude-3-5-sonnet-20240620" for the best agentic performance
         OpenAiChatModel model = OpenAiChatModel.builder()
                 .apiKey(openAIKey)
-                .modelName("claude-3-5-sonnet-20240620")
+                .modelName("gpt-4.1")
                 .build();
         
         // 2. Build the Agent exactly as before
@@ -27,6 +27,6 @@ public class OpenAIAgentApp {
 
 		// 3. Run the agent
         String response = agent.chat("How many EUR is $125?");
-        System.out.println("Claude Agent: " + response);
+        System.out.println("openAI Agent: " + response);
     }
 }
